@@ -1,0 +1,62 @@
+/* Tipografia e espaçamento geral */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Títulos das seções */
+.section-title {
+  margin: 2rem 0 1rem;
+  border-left: 6px solid #FF7F50;
+  padding-left: .75rem;
+}
+
+.card-img-top {
+  height: auto;          /* mantém altura original */
+  max-height: 250px;     /* controla para não ficar gigante */
+  object-fit: contain;   /* mostra a imagem inteira */
+}
+
+
+/* Acessibilidade: foco visível para links e botões */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: 3px solid #FF7F50 !important;
+  outline-offset: 2px;
+}
+
+/* Link "pular para o conteúdo" visível ao foco */
+.visually-hidden-focusable:active,
+.visually-hidden-focusable:focus {
+  position: static !important;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* Área de mensagens do formulário */
+#mensagem {
+  transition: opacity .2s ease-in-out;
+}
+
+/* Ajuste de imagens do carrossel */
+#destaquesCarousel .carousel-item img {
+  height: 450px;       /* controla altura */
+  width: 100%;         /* ocupa toda largura */
+  object-fit: cover;   /* preenche sem distorcer (corta excesso) */
+  object-position: center; /* centraliza o corte */
+}
+
+
+
+
+.navbar {
+  padding-top: .5rem;    /* espaço acima */
+  padding-bottom: .5rem; /* espaço abaixo */
+}
+
+.navbar-brand img {
+  height: 80px;   /* altura fixa */
+  width: auto;    /* mantém proporção */
+}
+
